@@ -1,0 +1,14 @@
+@keyframes moveLeftRight {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(7px); /* Atur seberapa jauh div bergerak ke kanan */
+  }
+}
+
+.animated-div {
+  animation: moveLeftRight 2s ease-in-out infinite; /* Sesuaikan durasi dan timing function sesuai kebutuhan */
+  translate: 50%;
+}
