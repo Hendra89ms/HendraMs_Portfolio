@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import ResponsiveNav from "./ResponsiveNav";
-// import CvPdf from "../assets/HendraMs_CV.pdf";
+import jsPDF from "jspdf";
+// import HendraCv from '../assets/'
 
 function Navbar() {
   const [setMenu, setHandleMenu] = useState(false);
@@ -28,19 +29,13 @@ function Navbar() {
     };
   }, []);
 
-  // URL FOR DOWNLOAD FILE
-  const PdfFile = "http://localhost:3000/HendraMs_CV.pdf";
-
   const downloadFileAtURL = (url) => {
-    const fileName = url.split("/").pop();
+    // URL FOR DOWNLOAD FILE
+    const pdfFIle = "https://i.ibb.co/YN1PVbG/My-Porfolio-1.png";
 
-    const aTag = document.createElement("a");
-    aTag.href = url;
-
-    aTag.setAttribute("download", fileName);
-    document.body.appendChild(aTag);
-    aTag.click();
-    aTag.remove();
+    const doc = new jsPDF("portrait", "px", "a4", false);
+    doc.addImage(pdfFIle, "PNG", 0, 0, 417, 653);
+    doc.save("resume.pdf");
   };
 
   return (
@@ -157,7 +152,7 @@ function Navbar() {
         </div>
 
         <button
-          onClick={() => downloadFileAtURL(PdfFile)}
+          onClick={downloadFileAtURL}
           className={`md:flex gap-3  text-sm justify-center items-center h-[40px] px-2 rounded-[4px] hidden hover:cursor-pointer ${
             scrolled ? "bg-white text-black" : "bg-black text-white"
           }`}
@@ -201,10 +196,7 @@ function Navbar() {
       </div>
 
       {setMenu && (
-        <ResponsiveNav
-          handleMenu={handleMenu}
-          downloadCV={() => downloadFileAtURL(PdfFile)}
-        />
+        <ResponsiveNav handleMenu={handleMenu} downloadCV={downloadFileAtURL} />
       )}
     </div>
   );
