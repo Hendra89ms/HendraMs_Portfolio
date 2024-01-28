@@ -29,7 +29,7 @@ function Navbar() {
     };
   }, []);
 
-  const downloadFileAtURL = (url) => {
+  const downloadFileAtURL = () => {
     // URL FOR DOWNLOAD FILE
     const pdfFIle = "https://i.ibb.co/YN1PVbG/My-Porfolio-1.png";
 

@@ -21,7 +21,7 @@ export const dataProject = [
         img: bookingApp
     },
     {
-        skill: ["React Js", "Tailwind Css", "Express js"],
+        skill: ["React Js", "Tailwind Css"],
         title: 'KalkulatorApp',
         linkGt: "https://github.com/Hendra89ms/Kalkulator-App",
         linkVc: "https://kalkulator-app-three.vercel.app/",
