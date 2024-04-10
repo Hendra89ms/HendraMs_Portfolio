@@ -3,7 +3,7 @@ import Image1 from "../assets/column.png";
 import Typewriter from "typewriter-effect";
 import Banner from "../assets/Banner.png";
 import { Link } from "react-router-dom";
-import './homePage.css'
+import "./homePage.css";
 
 function HomePage() {
   const [isHoveredLk, setIsHoveredLk] = useState(false);
@@ -29,7 +29,7 @@ function HomePage() {
 
   return (
     <section
-      className="w-screen pt-[85px] md:w-[1100px] mx-auto  flex flex-col"
+      className="w-screen pt-[85px] md:pb-14 md:w-[1100px] mx-auto  flex flex-col"
       id="/"
     >
       <div className="md:flex md:flex-row-reverse flex flex-col relative  md:px-0 w-full ">
@@ -70,9 +70,9 @@ function HomePage() {
             </span>{" "}
             who has experience and expertise in building quality and scalable
             web applications. I understand technology and programming languages
-            such as HTML, CSS, JavaScript, React Js, Node.js and Tailwind Css. I am able to
-            manage projects from start to finish, involve the team and work well
-            in teamwork.
+            such as HTML, CSS, JavaScript, React Js, Node.js and Tailwind Css. I
+            am able to manage projects from start to finish, involve the team
+            and work well in teamwork.
           </p>
 
           <div className="flex gap-4 pt-[30px]">

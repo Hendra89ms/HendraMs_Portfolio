@@ -53,7 +53,7 @@ function SectionSkill() {
 
   return (
     <section className="w-screen" id="skills">
-      <div className="md:w-[1100px] w-screen mx-auto md:pt-[100px] pt-20 pb-10">
+      <div className="md:w-[1100px] w-screen mx-auto md:pt-[100px] pt-24 pb-10">
         <div className="w-full flex justify-center items-center gap-1">
           <p className="text-2xl  ">My</p>
           <h1 className="text-2xl font-bold">Skills</h1>

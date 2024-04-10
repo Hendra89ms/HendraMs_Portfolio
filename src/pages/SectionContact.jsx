@@ -23,7 +23,7 @@ function SectionContact() {
   };
 
   return (
-    <div className="w-screen md:pt-[90px] pt-5 pb-10" id="contact">
+    <div className="w-screen md:pt-[90px] pt-12 py-10" id="contact">
       <div className="md:w-[1100px] mx-auto w-screen px-5 md:px-0 flex justify-center items-center flex-col">
         <h1 className="font-bold md:text-2xl text-xl text-center">CONTACT</h1>
         <form

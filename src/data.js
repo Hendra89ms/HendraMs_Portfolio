@@ -4,6 +4,9 @@ import bookingApp from "./assets/bookingApp.jpg";
 import eshopApp from "./assets/eshopApp.png"
 import bookApp from "./assets/bookApp_project.png";
 import simpleTodoList from './assets/simpleTodoList.jpg'
+import cartApps from './assets/cartApps.jpg'
+import oldPortfolio from './assets/my_old_portfollio.jpg'
+import onlineClassApp from './assets/onlineClassApp.jpg'
 
 export const dataProject = [
     {
@@ -42,11 +45,35 @@ export const dataProject = [
         img: todoListApp
     },
     {
-        skill: ["react js", "css", ],
+        skill: ["react js", "css",],
         title: 'simpleTodoListApp',
         linkGt: "https://github.com/Hendra89ms/todolistApp_dasar_reactjs",
         linkVc: "https://todolist-app-dasar-reactjs.vercel.app/",
         img: simpleTodoList
     },
+
+    {
+        skill: ["react js", "tailwindcss", "firebase"],
+        title: "cartApps",
+        linkGt: "https://github.com/Hendra89ms/cart_app",
+        linkVc: "https://cart-app-weld.vercel.app/",
+        img: cartApps
+    },
+    {
+        skill: ['react js', "tailwindcss"],
+        title: "myOldPortfolio",
+        linkGt: "https://github.com/Hendra89ms/MY_PORTFOLIO",
+        linkVc: "https://my-portfolio-ruby-two.vercel.app/",
+        img: oldPortfolio
+    }, 
+    {
+        skill : ['react js', "tailwindcss"], 
+        title : "Online Class App", 
+        linkGt: "https://github.com/Hendra89ms/onlineClassApp", 
+        linkVc : "https://online-class-app-two.vercel.app/",
+        img : onlineClassApp
+    }
+
+
 ]
 

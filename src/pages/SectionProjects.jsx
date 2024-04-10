@@ -7,7 +7,7 @@ import { dataProject } from "../data";
 function SectionProjects() {
 
   return (
-    <div className="w-screen bg-black text-white py-5" id="projects">
+    <div className="w-screen bg-black text-white py-10" id="projects">
       <div className="md:w-[1100px] mx-auto w-full px-5 md:px-0 md:pt-12 pt-10">
         <h1 className="font-bold text-2xl text-center py-5">My Projects</h1>
 
